@@ -7,6 +7,8 @@ from django.contrib.auth import get_user_model
 from django.http import HttpResponse
 import pdfkit
 from django.template.loader import render_to_string
+import os
+from django.conf import settings
 
 User = get_user_model()
 
@@ -100,8 +102,11 @@ class PatientRecordDownloadView(APIView):
             'patient': request.user
         })
         
+        # Configure pdfkit
+        config = pdfkit.configuration(wkhtmltopdf=getattr(settings, 'WKHTMLTOPDF_PATH', None))
+        
         # Convert HTML to PDF
-        pdf = pdfkit.from_string(html_content, False)
+        pdf = pdfkit.from_string(html_content, False, configuration=config)
         
         # Create HTTP response with PDF
         response = HttpResponse(pdf, content_type='application/pdf')
