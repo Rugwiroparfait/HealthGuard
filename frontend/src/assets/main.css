@@ -57,14 +57,22 @@ button {
 }
 
 .btn-secondary {
-  background-color: var(--color-secondary);
+  background: rgba(15, 225, 133, 0.8);
   color: white;
+  box-shadow: 
+    0 4px 20px rgba(15, 225, 133, 0.4),
+    0 0 0 1px rgba(15, 225, 133, 0.2) inset;
+  border: 3px solid rgba(0, 0, 0, 0.5);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-secondary-dark);
+  background: rgba(15, 225, 133, 0.9);
+  box-shadow: 
+    0 8px 30px rgba(15, 225, 133, 0.6),
+    0 0 0 1px rgba(15, 225, 133, 0.3) inset;
+  transform: translateY(-5px);
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
-
 .btn-danger {
   background-color: var(--color-danger);
   color: white;
