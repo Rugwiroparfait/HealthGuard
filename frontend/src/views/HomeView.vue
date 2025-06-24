@@ -224,6 +224,56 @@
       </section>
     </div>
 
+    <!-- See HealthGuard in Action section -->
+    <section class="testimonials-section">
+      <h2>See HealthGuard in Action</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card ios-glass">
+          <div class="image-container">
+            <img src="../assets/doctor_headphonespexels-negativespace-48604.jpg" alt="Doctor with headphones" class="testimonial-image" />
+            <div class="image-credit">Photo by Negative Space</div>
+          </div>
+          <div class="card-content">
+            <h3>Virtual Consultations</h3>
+            <p>Connect with healthcare providers remotely and discuss your medical records in real-time.</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card ios-glass">
+          <div class="image-container">
+            <img src="../assets/doctor_checking_his patients_ on tabletexels-tima-miroshnichenko-5355866.jpg" alt="Doctor checking patient records on tablet" class="testimonial-image" />
+            <div class="image-credit">Photo by Tima Miroshnichenko</div>
+          </div>
+          <div class="card-content">
+            <h3>Mobile Record Access</h3>
+            <p>Healthcare professionals can access your information securely from any device, ensuring you receive informed care.</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card ios-glass">
+          <div class="image-container">
+            <img src="../assets/backshort_of_doctor_pexels-thirdman-5327647.jpg" alt="Doctor working at computer" class="testimonial-image" />
+            <div class="image-credit">Photo by Thirdman</div>
+          </div>
+          <div class="card-content">
+            <h3>Comprehensive Health Management</h3>
+            <p>Doctors can view your complete medical history to make better informed decisions about your care.</p>
+          </div>
+        </div>
+        
+        <div class="testimonial-card ios-glass">
+          <div class="image-container">
+            <img src="../assets/doing_online_realtimeideo_online_consultancy_pexels-shvetsa-4225881.jpg" alt="Online video consultation" class="testimonial-image" />
+            <div class="image-credit">Photo by Shvetsa</div>
+          </div>
+          <div class="card-content">
+            <h3>Real-time Online Consultancy</h3>
+            <p>Get expert medical advice through secure video calls while referencing your health records.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Call to action section with enhanced iOS glass -->
     <section class="cta-section ios-glass">
       <h2>Ready to Take Control of Your Health Records?</h2>
@@ -832,6 +882,83 @@ h1 span {
   font-size: 0.95rem;
   position: relative;
   z-index: 2;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-card {
+  padding: 20px;
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+  color: #ffffff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-content p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
 }
 
 /* CTA section */
